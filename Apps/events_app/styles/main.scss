@@ -1,0 +1,253 @@
+/* Styling the header component */
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap");
+
+header {
+  padding: 1rem 1.5rem;
+  margin-bottom: 4rem;
+  background-image: url("https://images.pexels.com/photos/1943411/pexels-photo-1943411.jpeg?auto=compress&cs=tinysrgb&w=600");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 42vh;
+  display: flex;
+  flex-direction: column;
+
+  .header-comp {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    h2 {
+      font-family: "Pacifico", cursive;
+      color: white;
+      text-shadow: 2.5px 2.5px rgb(105, 5, 255);
+      font-weight: bold;
+      font-size: 2.5rem;
+    }
+    .navbar {
+      display: flex;
+      justify-content: flex-end;
+      font-size: 1.1rem;
+      font-family: "Montserrat Alternates", sans-serif;
+      font-weight: 600;
+      color: white;
+      gap: 20px;
+    }
+  }
+
+  p {
+    font-family: "Montserrat Alternates", sans-serif;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 3px;
+    font-size: 1.4rem;
+    margin-top: 7px;
+  }
+}
+
+/* Styling the homePage */
+* {
+  img {
+    border-radius: 0.6rem;
+    border: none;
+  }
+}
+.mainContent {
+  padding: 2rem 3.5rem;
+  //   height: 260vh;
+  display: flex;
+  flex-direction: column;
+  font-family: "Montserrat Alternates", sans-serif;
+  gap: 80px;
+  .main-div {
+    .card-link {
+      display: flex;
+      flex-direction: row;
+      gap: 80px;
+      justify-content: center;
+      align-content: center;
+      align-items: center;
+
+      .title-desc {
+        h2 {
+          font-size: 2.4rem;
+          &:hover {
+            text-shadow: 2px 2px rgb(114, 239, 248);
+          }
+        }
+        p {
+          width: 60%;
+        }
+      }
+      &:hover {
+        .title-desc {
+          h2 {
+            text-shadow: 2px 2px rgb(114, 239, 248);
+          }
+        }
+      }
+    }
+    .san-francisco {
+      flex-direction: row-reverse;
+      gap: 30px;
+      img {
+        margin-right: 10rem;
+      }
+      .title-desc {
+        margin-left: 8rem;
+      }
+    }
+  }
+}
+
+/* Styling the about-us page  */
+.about-page {
+  padding: 2rem 3.5rem;
+  font-family: "Montserrat Alternates", sans-serif;
+}
+
+/* Styling the events (all events) page  */
+.total-events {
+  padding: 2rem 3.5rem;
+  font-family: "Montserrat Alternates", sans-serif;
+  h1 {
+    font-weight: bold;
+    font-size: 3.4rem;
+    text-align: center;
+    width: 100%;
+  }
+
+  .main-div {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+
+    .card-link {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      position: relative;
+      margin-top: 2rem;
+
+      h2 {
+        font-size: 3.1rem;
+        color: white;
+        text-shadow: 6px 6px 5px rgb(85, 8, 64);
+        text-align: center;
+        left: 61px;
+        top: 110px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 66%;
+        position: absolute;
+      }
+
+      img {
+        border: 3px solid transparent;
+        transition: all 2ms ease;
+        &:hover {
+          border: 3px solid blue;
+        }
+      }
+    }
+  }
+}
+/* Styling the events (city specific) page  */
+
+.city-events {
+  padding: 2rem 3.5rem;
+  font-family: "Montserrat Alternates", sans-serif;
+
+  h1 {
+    font-weight: bold;
+    font-size: 3.4rem;
+    text-align: center;
+    width: 100%;
+  }
+  .main-div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 5px;
+    text-align: center;
+    margin-top: 8rem;
+    margin-bottom: 5rem;
+    .card-link {
+      .title-desc {
+        margin-bottom: 65px;
+        h2 {
+          font-size: 2.4rem;
+          &:hover {
+            text-shadow: 2px 2px rgb(114, 239, 248);
+          }
+        }
+        p {
+          width: 65%;
+          margin: auto;
+        }
+      }
+      &:hover {
+        .title-desc {
+          h2 {
+            text-shadow: 2px 2px rgb(114, 239, 248);
+          }
+        }
+      }
+    }
+  }
+}
+/* Styling the single event page  */
+.each-event {
+  padding: 2rem 3.5rem;
+  font-family: "Montserrat Alternates", sans-serif;
+
+  h1 {
+    margin-bottom: 2.4rem;
+  }
+  p {
+    margin-top: 2.3rem;
+    margin-bottom: 2rem;
+  }
+  .email-registration {
+    label {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+    input[type="email"] {
+      font-size: 1rem;
+      padding: 0.6rem 1.5rem;
+      margin-right: 1.3rem;
+    }
+    button {
+      font-size: 1.31rem;
+      padding: 0.5rem 1.8rem;
+      background-image: url("https://images.pexels.com/photos/1943411/pexels-photo-1943411.jpeg?auto=compress&cs=tinysrgb&w=600");
+      background-size: cover;
+      background-repeat: no-repeat;
+      color: white;
+      outline: transparent;
+      border-radius: 0.6rem;
+      cursor: pointer;
+
+      &:hover {
+        text-shadow: 2px 2px 4px rgb(29, 109, 171);
+      }
+    }
+  }
+}
+/* Styling the footer */
+.footer-comp {
+  background-image: url("https://images.pexels.com/photos/1943411/pexels-photo-1943411.jpeg?auto=compress&cs=tinysrgb&w=600");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  text-align: center;
+  margin-top: 8rem;
+  padding: 1rem;
+
+  p {
+    font-size: 1.11rem;
+    font-family: "Montserrat Alternates", sans-serif;
+  }
+}
